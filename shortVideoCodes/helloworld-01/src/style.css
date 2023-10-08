@@ -1,0 +1,18 @@
+body{
+    background-color: #398991;
+}
+h1{
+    color: #deebec;
+    font-size: 40px;
+}
+.button{
+    background-color: #b3e47a;
+    color: rgb(132, 166, 235);
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
