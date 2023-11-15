@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REACT JS</title>
+    <style>
+        .footer{
+            font-size: 30px;
+            color: purple;
+        }
+
+    </style>
 </head>
 <body>
     <div class="root">Not Rendering</div>
-
     
     <script 
         crossorigin 
@@ -37,7 +43,7 @@
         );
 
         const footer = (
-            <footer>
+            <footer className="footer">
                 <p><i>copywrite @ 2023</i></p>
             </footer>
         );
@@ -50,9 +56,8 @@
             </div>
         );
 
-
         ReactDOM.render(app, rootElement);
-        
+
     </script>
 </body>
 </html>

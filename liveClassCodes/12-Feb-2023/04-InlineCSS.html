@@ -23,14 +23,16 @@
         const rootElement = document.querySelector(".root");
         
         const header = (
-            <header>
+            <header style={{border: "2px solid red", backgroundColor: "#333", color: "#fff", paddingLeft: "20px"}}>
                 <h1>Hello React JS</h1>
                 <p><b>Basic Topics on React JS : </b></p>
             </header>
         );
 
+        const csss = {backgroundColor:"yellow", border: "2px dashed pink", marginTop: "30px", paddingLeft: "30px"};
+
         const main = (
-            <main>
+            <main style={csss}>
                 <p>1. React is Components Based Approch.</p>
                 <p>2. DOM Upadted are handled gracefully.</p>
             </main>
@@ -46,13 +48,13 @@
             <div>
                 {header} 
                 {main} 
+                {main} 
                 {footer}
             </div>
         );
 
-
         ReactDOM.render(app, rootElement);
-        
+
     </script>
 </body>
 </html>
