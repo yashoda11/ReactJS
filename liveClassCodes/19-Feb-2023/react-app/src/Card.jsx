@@ -10,6 +10,7 @@ function Card({myname, list, details}){
         <h1>Name : {details.name?.title} {details.name?.first} {details.name?.last}</h1>
         <h2>Gender : {details.gender}</h2>
         <h2>Country : {details.location?.country}</h2>
+        <h2>Country : {details.location?.country}</h2>
         <h2>Phone : {details.phone}</h2>
         <h2>Email : {details.email}</h2>
 
