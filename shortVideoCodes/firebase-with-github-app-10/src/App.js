@@ -4,6 +4,7 @@ import './App.css';
 // bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 // React Toasity
 import "react-toastify/dist/ReactToastify.min.css";
 import { ToastContainer } from "react-toastify";
@@ -22,6 +23,7 @@ import Signup from "./Pages/Signup";
 import PageNotFound from "./Pages/PageNotFound";
 import { UserContext } from './Context/UserContext';
 import Footer from './Layout/Footer';
+import Header from './Layout/Header';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -29,6 +31,7 @@ const App = () => {
     <Router>
       <ToastContainer />
       <UserContext.Provider value={{user, setUser}}>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<Signin />} />
@@ -38,7 +41,6 @@ const App = () => {
       <Footer />
       </UserContext.Provider>
     </Router>
-    
   );
 };
 
