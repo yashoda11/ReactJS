@@ -40,7 +40,7 @@ const Header = () => {
                     <NavItem>
                      <NavLink
                         onClick={() => {
-                        context.setUser(null);
+                        context.setUser(null)
                         }}
                         className="text-white"
                     >
