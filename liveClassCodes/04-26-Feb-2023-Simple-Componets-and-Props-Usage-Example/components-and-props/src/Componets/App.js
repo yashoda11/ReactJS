@@ -5,9 +5,9 @@ const App = () => {
     <>
     <h1>Components and Props</h1>
     <h3>Example : </h3>
-    <Card name="Ram"/>
-    <Card name="Shiv"/>
-    <Card name="Sai"/>
+    <Card name="Ram" and age="15" />
+    <Card name="Shiv" age="19" />
+    <Card name="Sai" age="18 "/>
     </>
   );
 }
