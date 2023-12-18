@@ -9,7 +9,6 @@ function App() {
   const count = useSelector((state) => state.counter.value )
   const dispatch = useDispatch()
 
-
   return (
     <div
     className='bg-zinc-900 text-zinc-100 flex justify-center items-center flex-col min-h-screen gap-6'
