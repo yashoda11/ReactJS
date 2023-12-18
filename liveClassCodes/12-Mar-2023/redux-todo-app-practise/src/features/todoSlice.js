@@ -7,6 +7,11 @@ const todoSlice = createSlice({
     addTodo: (state, action) => {
       state.push(action.payload);
     },
+    removeTodo: (state, action) => {
+      // Use filter to create a new array without the removed todo
+      state = state.filter((todo) => todo.id !== action.payload);
+      return state;
+    },
     toggleTodo: (state, action) => {
       const todo = state.find((todo) => todo.id === action.payload);
       if (todo) {
@@ -16,5 +21,5 @@ const todoSlice = createSlice({
   },
 });
 
-export const { addTodo, toggleTodo } = todoSlice.actions;
+export const { addTodo, toggleTodo, removeTodo } = todoSlice.actions;
 export default todoSlice.reducer;
